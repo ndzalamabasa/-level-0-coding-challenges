@@ -2,8 +2,8 @@ function convertNumberToTime(number) {
   let hours = Math.floor(number / 60);
   let minutes = number % 60;
 
-  if (hours < 1) {
-    if (minutes < 1) {
+  if (hours === 0) {
+    if (minutes === 0) {
       return `${hours} hours, ${minutes} minutes`;
     } else if (minutes === 1) {
       return `${hours} hours, ${minutes} minute`;
@@ -11,7 +11,7 @@ function convertNumberToTime(number) {
       return `${hours} hours, ${minutes} minutes`;
     }
   } else if (hours === 1) {
-    if (minutes < 1) {
+    if (minutes === 0) {
       return `${hours} hour, ${minutes} minutes`;
     } else if (minutes === 1) {
       return `${hours} hour, ${minutes} minute`;
@@ -19,7 +19,7 @@ function convertNumberToTime(number) {
       return `${hours} hour, ${minutes} minutes`;
     }
   } else if (hours >= 1) {
-    if (minutes < 1) {
+    if (minutes === 0) {
       return `${hours} hours, ${minutes} minutes`;
     } else if (minutes === 1) {
       return `${hours} hours, ${minutes} minute`;
@@ -32,4 +32,4 @@ function convertNumberToTime(number) {
 }
 
 // Function test call
-console.log(convertNumberToTime(213));
+console.log(convertNumberToTime(0));
