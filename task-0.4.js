@@ -6,6 +6,5 @@ function checkEvenOrOdd(number) {
   }
 }
 
-for (let index = 0; index <= 10; index++) {
-  checkEvenOrOdd(index);
-}
+// Function test call
+checkEvenOrOdd(23);
