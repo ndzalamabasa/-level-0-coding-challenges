@@ -7,7 +7,7 @@ function getCommonLetters(firstString, secondString) {
   for (let i = 0; i < firstString.length; i++) {
     for (let j = 0; j < secondString.length; j++) {
       if (firstString[i] === secondString[j]) {
-        if (!(commonLettersArray.indexOf(secondString[j]) !== -1)) {
+        if (commonLettersArray.indexOf(secondString[j]) === -1) {
           commonLettersArray.push(secondString[j]);
         }
       }
