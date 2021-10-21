@@ -6,7 +6,7 @@ function searchVowels(string) {
 
   for (let i = 0; i < string.length; i++) {
     if (vowels.includes(string[i])) {
-      if (!(vowelsArray.indexOf(string[i]) !== -1)) {
+      if (vowelsArray.indexOf(string[i]) === -1) {
         vowelsArray.push(string[i]);
       }
     }
